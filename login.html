@@ -18,12 +18,12 @@
         <form class="register">
 <p>STUDENT REGISTRATION FORM</p>
 <div class="name"> 
-    <input type="text" placeholder="First name">
-    <input type="text" placeholder="Last name">
+    <input id="firstnme" type="text" placeholder="First name">
+    <input id="lastname" type="text" placeholder="Last name">
 </div>
-<input type="text" placeholder="Address">
+<input id="address" type="text" placeholder="Address">
 <div><P>Gender:</P>
-<input type="radio" value="Female" name="Gender">Female
+<input  type="radio" value="Female" name="Gender">Female
 <input type="radio" value="Male" name="Gender" >Male
 <input type="radio" value="Other" name="Gender" >Other
 </div>
@@ -42,12 +42,12 @@
         
         </select>
     </div>
-    <input type="text" placeholder="Pincode">
-    <input type="text" placeholder="course">
-    <input type="email" placeholder="Email ID">
+    <input id="Pincode" type="text" placeholder="Pincode">
+    <input id="course" type="text" placeholder="course">
+    <input id="email" type="email" placeholder="Email ID">
     <div>
         <input type="submit" placeholder="RESET ALL"/> 
-        <input type="submit" placeholder="SUBMIT FORM">
+        <input onclick="save()" type="submit" placeholder="SUBMIT FORM">
     </div>
         </form>
 
