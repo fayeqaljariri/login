@@ -1,6 +1,8 @@
 const update=()=> {
  let select = document.getElementById("state");
+ 
   let option = select.options[select.selectedIndex];
+  console.log()
   if (option.value=="Jordan") { 
     $("#city option").remove()     
   $("#city").append(
@@ -27,3 +29,20 @@ const update=()=> {
 }
 
 // update();
+ const save=()=>{
+    let select = document.getElementById("state");
+let selctCity=document.getElementById("city");
+const user={
+    "firstnme" :$("#firstnme").val(),
+    "lastname":$("#lastname").val(),
+    "address":$("#address").val(),
+    "Gender":$("input[name='Gender']:checked").val(),
+    "state":select.options[select.selectedIndex].value,
+    "city":selctCity.options[selctCity.selectedIndex].value,
+    "Pincode":$("#address").val(),
+    "course":$("#course").val(),
+    "email":$("#email").val(),
+}
+window.localStorage.setItem("user", JSON.stringify(user));
+
+ }
