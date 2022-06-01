@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- the head tag isn't displayed but it is used to add meta data or for connecting the page to other pages -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+ 
+    <title>Login page</title>
+    <link rel="stylesheet" type="text/css" href="login.css" />
+  </head>
+  <body>
+    <div class="contanier">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQmeP0i8UtZ6apoX94pOP_Nz9ycimOoJTjdA&usqp=CAU" alt=""> 
+        <form class="register">
+<p>STUDENT REGISTRATION FORM</p>
+<div class="name"> 
+    <input type="text" placeholder="First name">
+    <input type="text" placeholder="Last name">
+</div>
+<input type="text" placeholder="Address">
+<div><P>Gender:</P>
+<input type="radio" value="Female" name="Gender">Female
+<input type="radio" value="Male" name="Gender" >Male
+<input type="radio" value="Other" name="Gender" >Other
+</div>
+<div>
+<select onChange="update()"  id="state" name="state">
+    <option   value="undifine">state</option>
+     <option  value="Jordan">Jordan</option>
+    <option  value="Saudi Arabia" >Saudi Arabia</option>
+    <option  value="Turkey">Turkey</option>
+
+    </select>
+    
+
+    <select id="city" name="state">
+        <option value="undifine">city</option>
+        
+        </select>
+    </div>
+    <input type="text" placeholder="Pincode">
+    <input type="text" placeholder="course">
+    <input type="email" placeholder="Email ID">
+    <div>
+        <input type="submit" placeholder="RESET ALL"/> 
+        <input type="submit" placeholder="SUBMIT FORM">
+    </div>
+        </form>
+
+
+    </div>
+    <script src='login.js'></script>
+  </body>
+</html>
