@@ -1,0 +1,25 @@
+.contanier{
+    display: flex;
+    margin-top: 10%;
+    width: 80%;
+    height: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contanier img{
+    width: 40%;
+}
+.register{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 20px;
+}
+.name{
+    display: flex;
+    gap: 20px;
+
+}
+.name input{
+    width :40%
+}
