@@ -15,19 +15,19 @@
   <body>
     <div class="contanier">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQmeP0i8UtZ6apoX94pOP_Nz9ycimOoJTjdA&usqp=CAU" alt=""> 
-        <form class="register">
-<p>STUDENT REGISTRATION FORM</p>
+        <form onsubmit="return false" id="register" class="register">
+<h2>STUDENT REGISTRATION FORM</h2>
 <div class="name"> 
     <input id="firstnme" type="text" placeholder="First name">
     <input id="lastname" type="text" placeholder="Last name">
 </div>
 <input id="address" type="text" placeholder="Address">
-<div><P>Gender:</P>
+<div class="Gender"><P>Gender:</P>
 <input  type="radio" value="Female" name="Gender">Female
 <input type="radio" value="Male" name="Gender" >Male
 <input type="radio" value="Other" name="Gender" >Other
 </div>
-<div>
+<div class="selected">
 <select onChange="update()"  id="state" name="state">
     <option   value="undifine">state</option>
      <option  value="Jordan">Jordan</option>
@@ -45,10 +45,17 @@
     <input id="Pincode" type="text" placeholder="Pincode">
     <input id="course" type="text" placeholder="course">
     <input id="email" type="email" placeholder="Email ID">
-    <div>
-        <input type="submit" placeholder="RESET ALL"/> 
-        <input onclick="save()" type="submit" placeholder="SUBMIT FORM">
+    <div class="btn">
+        <input  type="submit" value="Login PAGE" name="RESET ALL"/> 
+        <input id="SUBMIT" onclick="save()" type="submit" value="SUBMIT FORM">
+       
     </div>
+        </form>
+        <form onsubmit="return false" id="login" >
+            <h2>STUDENT LOGIN FORM</h2>
+            <input id="email" type="email" placeholder="Email ID">
+            <input id="Pincode" type="text" placeholder="Pincode">
+            <input id="btnalert"  onclick="myFunction()"  type="submit" value="LOGIN" name="LOGIN"/>
         </form>
 
 
