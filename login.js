@@ -1,3 +1,4 @@
+//this functio use for make related for city and state
 const update=()=> {
  let select = document.getElementById("state");
  
@@ -28,7 +29,7 @@ const update=()=> {
   } 
 }
 
-// update();
+//this functio use for save date in local storge from input filed
  const save=()=>{
     let select = document.getElementById("state");
 let selctCity=document.getElementById("city");
