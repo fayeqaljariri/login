@@ -44,5 +44,18 @@ const user={
     "email":$("#email").val(),
 }
 window.localStorage.setItem("user", JSON.stringify(user));
-
+$("#register").hide();
+$("#login").show()
  }
+
+ const hide=()=>{
+    $("#address").hide();
+ }
+ $("#hide").click(function(){
+    $("#address").hide();
+  });
+  $("#login").hide()
+
+
+  function myFunction() {
+    alert("Welcome");}
